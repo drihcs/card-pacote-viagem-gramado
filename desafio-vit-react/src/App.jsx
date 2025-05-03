@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="card">
+      <img src="/gramado.png" className="card-image" alt="Gramado" />
+        <div className="card-body">
+        <div className="badge">9 DIAS / 8 NOITES</div>
+
+        <h2 className="title">Pacotes para Gramado</h2>
+
+        <div className="rating">
+          <span className="score">9.4</span>
+          <span className="stars">★★★☆☆</span>
+        </div>
+
+        <p className="departure">Saindo de São Paulo</p>
+        <p className="combo">Hotel + Aéreo</p>
+
+        <div className="discount">Economize R$84</div>
+
+        <div className="price-info">
+          <p className="old-price">R$ 1.266</p>
+          <p className="new-price">R$ 1.182</p>
+          <p className="note">Taxas e impostos não inclusos</p>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
